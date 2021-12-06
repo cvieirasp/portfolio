@@ -3,11 +3,11 @@ import GithubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import YoutubeIcon from '@material-ui/icons/YouTube';
 import Particle from '../../Components/Particle';
-import HomePageStyled from './style';
+import HomeStyled from './style';
 
-const HomePage = function () {
+const Home = function () {
   return (
-    <HomePageStyled>
+    <HomeStyled>
       <div className="particle-con">
         <Particle />
       </div>
@@ -34,8 +34,8 @@ const HomePage = function () {
           </a>
         </div>
       </div>
-    </HomePageStyled>
+    </HomeStyled>
   );
 };
 
-export default HomePage;
+export default Home;

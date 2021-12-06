@@ -14,6 +14,7 @@ const NavigationStyled = styled.div`
     border-bottom: 1px solid var(--border-color);
     text-align: center;
     padding: 1rem 0;
+
     img {
       width: 70%;
       border-radius: 50%;
@@ -24,16 +25,23 @@ const NavigationStyled = styled.div`
   .nav-items {
     width: 100%;
     text-align: center;
+
     li {
       display: block;
+
       a {
         display: block;
-        padding: .2rem 0;
+        padding: .45rem 0;
         position: relative;
         z-index: 10;
+        text-transform: uppercase;
+        transition: all .4s ease-in-out;
+        font-weight: 600;
+        letter-spacing: 1px;
 
         &:hover {
           cursor: pointer;
+          color: var(--white-color);
         }
 
         &::before {
@@ -46,7 +54,7 @@ const NavigationStyled = styled.div`
           background-color: var(--primary-color);
           opacity: 0.21;
           transition: All 0.4s cubic-bezier(1,-0.2,.25,.95);
-          z-index: 3;
+          z-index: -1;
         }
       }
 
@@ -57,15 +65,17 @@ const NavigationStyled = styled.div`
     }
 
     .active-class {
-      background-color: var(--primary-color);
+      background-color: var(--primary-color-light);
+      color: white;
     }
   }
 
   footer {
     border-top: 1px solid var(--border-color);
     width: 100%;
+
     p {
-      padding: 2rem 0;
+      padding: 1.3rem 0;
       font-size: 1.1.rem;
       display: block;
       text-align: center;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const HomePageStyled = styled.header`
+const HomeStyled = styled.header`
   position: relative;
   width: 100%;
   height: 100vh;
@@ -58,4 +58,4 @@ const HomePageStyled = styled.header`
   }
 `;
 
-export default HomePageStyled;
+export default HomeStyled;
